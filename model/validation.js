@@ -198,3 +198,6 @@ function validateForm(event) {
 
 }
 }
+
+
+// Localstorage shoppingcart, se yt video

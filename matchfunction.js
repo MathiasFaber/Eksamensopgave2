@@ -44,8 +44,3 @@ console.log(match())
 module.exports = match;
 module.exports = matches;
 
-//fs.writefilesync (lav en variabel der henter noget fra input feltet når en bruger oprettes, for at ligge den i en JSON fil.)
-// fx var jsonstring = queryselector...
-//working with JSON website
-
-let requestURL = 
