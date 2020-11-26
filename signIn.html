@@ -1,4 +1,12 @@
-<form action="frontpage.html" method="post">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--form action="frontpage.html" method="post"-->
     <div class="imgcontainer">
     </div>
   
@@ -12,7 +20,7 @@
       <label id="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
   
-      <button type="submit">Login</button>
+      <button type="submit" id="signin">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
@@ -24,8 +32,11 @@
       <div class="container" style="background-color:#f1f1f1">
         <span class="Create"><a href="Create.html">Create profile?</a></span>
       </div>
-
-
     </div>
   
   </form> 
+  
+</body>
+<script src="model/loginValidation.js"></script>
+
+</html>

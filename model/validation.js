@@ -1,3 +1,5 @@
+//const { json } = require("express");
+
 var signUpButton = document.getElementById("SignedUp").addEventListener("click",validateForm);
 
 
@@ -15,19 +17,33 @@ class User {
     }
 }
 
+// Hardcode usere her. Kommentar til rapport: Det ville være mere funktionelt hvis man kunne pushe en ny oprettet bruger ind i 
+var Jens = new User("Jens", "123abe", "1234678", "greve", "2670", "hej alle 200", "abe@mail.dk", "male")
+var Anders = new User("Anders", "321abe", "1234678", "kbh", "2300", "hej alle 201", "ged@mail.dk", "male")
+var Emma = new User("Jens", "123abe", "1234678", "greve", "2670", "hej alle 202", "giraf@mail.dk", "female")
+/*
+var Hardcoded = [];
+Hardcoded.push(JSON.stringify(Jens))
+Hardcoded.push(JSON.stringify(Anders))
+Hardcoded.push(JSON.stringify(Emma))
+
+
+localStorage.setItem("User", Hardcoded)
+*/
+
+
 //brugerne hentes så der kan tilføjes brugere, hvorunder userlist automatisk vil tage informationen 
 if(localStorage.getItem("User") === null) {
     var userList = [];
     //new user pushes op i det tomme array
-    userList.push(new User("test 1", "123456", "42343212", "Copenhagen", "2200", "Bovej 2", "test1@mail.dk"))
-    userList.push(new User("test 2", "185026", "12141112", "Copenhagen", "2100", "Centrumsvej 5", "test2@mail.dk"))
-    userList.push(new User("test 3", "484429", "27834702", "Copenhagen", "2000", "Københavnsvej 10", "test3@mail.dk"))
-    userList.push(new User("test 4", "9344259", "17131712", "Copenhagen", "2400", "Tranevej 7", "test4@mail.dk"))
-//arrayet userList laves om til et string vha. json.stringify, dette gemmes i localstorage
+    userList.push(Jens)
+    userList.push(Anders)
+    userList.push(Emma)
 
     var userListString = JSON.stringify(userList);
     localStorage.setItem("User", userListString)
 }
+
 
 // herefter valideres samtlige felter ved oprettelse af en ny bruger 
 
@@ -198,6 +214,5 @@ function validateForm(event) {
 
 }
 }
-
 
 // Localstorage shoppingcart, se yt video
