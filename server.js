@@ -160,3 +160,11 @@ fs.writeFile ("likearrays.json", JSON.stringify(data), function(err) {
     }
 );
 */
+
+
+
+
+//https://www.digitalocean.com/community/tutorials/use-expressjs-to-deliver-html-files!!!!!!!
+// se evt http forelæsning
+// hvis du ikke bruger express server, så skriv et enormt langt afsnit om hvordan man ville have brugt det.!!
+// Brug evt det her til at lave server requests: https://developers.onelogin.com/api-docs/1/login-page/login-user-via-api

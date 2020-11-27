@@ -2,6 +2,7 @@
 
 var signUpButton = document.getElementById("SignedUp").addEventListener("click",validateForm);
 
+// Husk at refere til at du har brugt store dele af din studiegruppes kode i denne del. 
 
 // benytter klassen fra user.js
 class User {
@@ -17,10 +18,12 @@ class User {
     }
 }
 
+
 // Hardcode usere her. Kommentar til rapport: Det ville være mere funktionelt hvis man kunne pushe en ny oprettet bruger ind i 
 var Jens = new User("Jens", "123abe", "1234678", "greve", "2670", "hej alle 200", "abe@mail.dk", "male")
 var Anders = new User("Anders", "321abe", "1234678", "kbh", "2300", "hej alle 201", "ged@mail.dk", "male")
-var Emma = new User("Jens", "123abe", "1234678", "greve", "2670", "hej alle 202", "giraf@mail.dk", "female")
+var Emma = new User("Emma", "123abe", "1234678", "greve", "2670", "hej alle 202", "giraf@mail.dk", "female")
+
 /*
 var Hardcoded = [];
 Hardcoded.push(JSON.stringify(Jens))

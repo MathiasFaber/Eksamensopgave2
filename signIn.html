@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <script src='model/loginValidation.js'></script>
+  <title>Log in</title>
 </head>
 <body>
   <!--form action="frontpage.html" method="post"-->
@@ -14,13 +15,13 @@
         <h1>
             Login
         </h1> 
-      <label id="username"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" id="username" required>
   
-      <label id="password"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="password" required>
   
-      <button type="submit" id="signin">Login</button>
+      <button onclick="login()">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
@@ -37,6 +38,5 @@
   </form> 
   
 </body>
-<script src="model/loginValidation.js"></script>
 
 </html>

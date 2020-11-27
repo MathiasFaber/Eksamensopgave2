@@ -3,7 +3,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #114185;
+    background-color: red;
 }
 .nav-links {
     display: flex;

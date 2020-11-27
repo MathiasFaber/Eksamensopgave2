@@ -11,15 +11,10 @@ function like() {
     possibleMatch.push(document.getElementById("profile").innerHTML);
     document.getElementById("like").innerHTML = possibleMatch;
 
-    
-
-
 
     for (i = 0; i < possibleMatch2.length; i++){
         if (document.getElementById("User1").innerHTML == possibleMatch2 && possibleMatch2 == possibleMatch){
-
         }
-
 };
 */
 var matches = [];

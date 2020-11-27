@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontpage</title>
+    <!--script src='model/validation.js'></script-->
     <script src='model/likes.js'></script>
     <link href="css.css" rel="stylesheet">
 
@@ -14,20 +15,23 @@
 <nav>
 
     <div class="logo">
-        <h4>Find Love 101</h4>
+        <h4><a href="frontpage.html">Find Love 101</a> </h4>
     </div>
     <ul class="nav-links">
         <li>
-            <a href="#omos1">Din Profil</a>
+            <a href="">Din Profil</a>
         </li>
         <li>
-            <a href="#companies">Mød andre brugere</a>
+            <a href="frontpage.html">Mød andre brugere</a>
         </li>
         <li>
-            <a href="#form">Mine Likes</a>
+            <a href="likes.html">Mine Likes</a>
         </li>
         <li>
-            <a href="#form">Mine Matches</a>
+            <a href="matches.html">Mine Matches</a>
+        </li>
+        <li>
+            <a href="signIn.html">Gå til login side</a>
         </li>
        
     </ul>
@@ -56,6 +60,7 @@
     <p id=""></p><br>
     <p>Tryk like for at tilføje profilen til dit "possible match" array. Liker personen dig igen, får du et match</p>
     <p id="profile"></p>
+    <p> Denne profil er hardcodet Anders, vil du like ham?</p>
     
 <button onclick="like()">Like</button> <!-- istedet for at pushe "Jens" skal den kunne pushe den profil som vises.-->
 <p id="like"></p>
