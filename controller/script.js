@@ -32,7 +32,7 @@ cp.addEventListener('click', ()=> {
     const email = document.getElementById('email');
     const password = document.getElementById('password');
 
-
+/*
     var values = [];
     // Her pushes dataen som brugeren har indtastet ind i et array, sammen med den tilhørende key (fx username)
     values.push({
@@ -44,6 +44,16 @@ cp.addEventListener('click', ()=> {
         "email" : email.value,
         "password" : password.value
     });
+    */
+    var users = {
+        name : name.value, 
+        phone : phone.value,
+        city : city.value,
+        zip : zip.value,
+        address : address.value,
+        email : email.value,
+        password : password.value
+    }
     /*
     values.push({"phone" : phone.value});
     values.push({"city" : city.value});
@@ -53,13 +63,13 @@ cp.addEventListener('click', ()=> {
     values.push({"password" : password.value});
     */
 
-    let data = values; 
+    let data = users; 
     console.log(data); //Tjekker hvorvidt vi har fået noget input fra brugeren
 
     // idk den tjekker vel for om siden er klar, og sender en fejl hvis den ikk er
     xhr.addEventListener("readystatechange", function() {
     if(this.readyState === 4) {
-        const respo = this.response // xhr.response??
+        const respo = this.response 
         console.log(respo); //Til at se, om request kommer tilbage
     }
     });
@@ -78,6 +88,8 @@ cp.addEventListener('click', ()=> {
 //Hvordan får jeg den til at hente alle mine input values fra HTML og smide dem i en JSON
 
 //Spørgsmål til vejleder:
-// Den her funktion smider alle values derind, men hvordan får jeg også username derind, så der står [{"username":"Jens"}] fx. 
-// Hvordan får jeg den til at gemme dataen i JSON-filen, så det ikke bliver overwrited af en ny bruger der opretter sig. 
-// I forhold til at trække data ud af JSON-filen, for at loope igennem dem og finde match eller 
+// (problem løst) Den her funktion smider alle values derind, men hvordan får jeg også username derind, så der står [{"username":"Jens"}] fx. 
+// Dataen bliver lagt ind i JSON, men den mangler lidt en "key" i guess???
+// (kinda løst) Hvordan får jeg den til at gemme dataen i JSON-filen, så det ikke bliver overwrited af, at en ny bruger der opretter sig. 
+// I forhold til at trække data ud af JSON-filen, for at loope igennem dem og finde match, er det smartest at gøre det i en ny fil?? 
+

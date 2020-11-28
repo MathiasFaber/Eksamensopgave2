@@ -48,7 +48,7 @@ app.post('/', (req, res)=> {
     // https://attacomsian.com/blog/nodejs-write-json-object-to-file save a class to json?
     console.log('Test for at se, om API bliver triggered')
     console.log(reqData)
-    fs.writeFileSync("storage.JSON", JSON.stringify(reqData, null, 2));
+    fs.writeFileSync("storage.JSON", JSON.stringify(reqData, null, 2), {flag: 'a+'});
     //console.log(reqData);
     res.send(JSON.stringify({besked: 'Her oprettes en bruger, dette er hans navn:', reqData}));
 })
