@@ -1,6 +1,7 @@
 //const { json } = require("express");
 
-var signUpButton = document.getElementById("SignedUp").addEventListener("click",validateForm);
+//var signUpButton = document.getElementById("SignedUp").addEventListener("click",validateForm);
+// Linke til nye sider ved create virker ikke pr??
 
 // Husk at refere til at du har brugt store dele af din studiegruppes kode i denne del. 
 
@@ -55,9 +56,10 @@ function printError(elemID, hintMsg) {
     document.getElementById(elemID).innerHTML = hintMsg;
 }
 
+
 //validate form funktionen defineres
 function validateForm(event) {
-    event.preventDefault 
+    //event.preventDefault 
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     var phone = document.getElementById("phone").value;
@@ -192,7 +194,7 @@ function validateForm(event) {
         "ZIP-code: " + zip+ "\n" + 
         "Address: " + address + "\n" + 
         "username: " + username + "\n" + 
-        "Password" ; 
+        "Password: " + "*****"; 
     
 
 //Herefter oprettes en variable for oprettede bruger, som sendes til localstorage
@@ -213,9 +215,12 @@ function validateForm(event) {
     console.log(newUserAdd);
 
     // window.location: returns the href (URL) of the current page
-    window.location = ("signIn.html");
+    // window.location = ("signIn.html");
+
+    
+    
 
 }
+
 }
 
-// Localstorage shoppingcart, se yt video

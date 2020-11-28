@@ -1,3 +1,5 @@
+// brug dette istedet for at sætte hele user klassen ind igen:
+// const user = require('./Model/user')
 class User {
     constructor(username, password, phone, city, zip, address, email, gender){
         this.username = username;

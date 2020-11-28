@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Link til create.js-->
+    <link href="../View/css.css" rel="stylesheet">
 
 </head>
 <body>
@@ -35,7 +37,7 @@
 
 
     <form name="signUpForm" method="post">
-        
+        <div id = "sign-up">
     
         <div id="errorMessages">
             <div id="usernameErr" > </div>
@@ -47,9 +49,10 @@
             <div id="passwordErr" ></div>
         </div>
             <br>
-            <p>Username</p>
+            <p id="usn">Username</p>
     
-            <input type="text" id="username" value="" placeholder="Name">
+            <input type="text" id="username" value="brugernavn" placeholder="Name">
+            <!-- h1 id="text">dette er usernamet</h1-->
             <br/>
     
             <br/>
@@ -113,12 +116,13 @@
 
 
        <div id="signUpButton">
-        <button id="SignedUp" type="button" class="registerbtn" > Submit </button>
+        <button  id="create" onclick="validateForm()" type="button"> Submit </button>
+        <!-- Brug evt id istedet for onclick? onclick="validateForm()" -->
         </div>
     <br>
     
         <div class="sign-in">
-            <p>Already have an account? <a href="SignIn.html">Sign in</a>.</p>
+            <p>Already have an account? <a href="signIn.html">Sign in</a>.</p>
     
         </div>
     
@@ -127,6 +131,8 @@
     
     
     </body>
-    <script src="server.js"></script>
+    <script src="script.js"></script>
+    <script src="../controller/validation.js"></script>
+
      
     </html>
